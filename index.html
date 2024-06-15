@@ -20,24 +20,12 @@
 </head>
 <body>
     <h1>Welcome bhosdike Rajat!</h1>
-    <p>Click the link below to reveal the hidden text.</p>
-    <a id="reveal-link" href="https://www.amazon.in/" target="_blank">Click here to go to MyCompany Website</a>
+    <p>Here is a secret message:</p>
     <p class="hidden-text" id="hidden-text">bete hosiyr bn rah teri gand kaaat dunga</p>
 
     <script>
-        // JavaScript to reveal hidden text when link is clicked
-        const revealLink = document.getElementById('reveal-link');
-        const hiddenText = document.getElementById('hidden-text');
-
-        revealLink.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the link from opening immediately
-            hiddenText.style.display = 'block'; // Display the hidden text
-
-            // After 2 seconds, redirect to the specified link
-            setTimeout(function() {
-                window.location.href = revealLink.href; // Redirect to the link specified in href attribute
-            }, 1000); // 2000 milliseconds = 2 seconds
-        });
+        // Directly redirect to Amazon
+        window.location.href = 'https://www.amazon.in/';
     </script>
 </body>
 </html>
