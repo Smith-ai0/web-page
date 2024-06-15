@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .hidden-text {
+            display: none;
+            margin-top: 20px;
+            color: #333;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome bhosdike Rajat!</h1>
+    <p>Click the link below to reveal the hidden text.</p>
+    <a id="reveal-link" href="https://www.google.com" target="_blank">Click here to go to Google</a>
+    <p class="hidden-text" id="hidden-text">bete hosiyr bn rah</p>
+
+    <script>
+        // JavaScript to reveal hidden text when link is clicked
+        const revealLink = document.getElementById('reveal-link');
+        const hiddenText = document.getElementById('hidden-text');
+
+        revealLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the link from opening immediately
+            hiddenText.style.display = 'block'; // Display the hidden text
+        });
+    </script>
+</body>
+</html>
